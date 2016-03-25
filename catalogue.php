@@ -1,11 +1,13 @@
 <?php
-$catalogue = array(
-  "Design Patterns",
-  "Forrest Gump",
-  "Beethovan"
-);
+$catalogue = array();
+$catalogue[] = "Design Patterns";
+$catalogue[] = "Forrest Gump";
+$catalogue[] = "Beethovan";
+$catalogue[] = "Clean Code";
+
 $pageTitle = "Full Catalogue";
 $section = null;
+
 if (isset($_GET["cat"])) {
   if ($_GET["cat"] == "books") {
     $pageTitle = "Books";
